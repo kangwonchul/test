@@ -14,4 +14,5 @@ jobs:
       - name: branch
         run: |
           echo ${{ github.head_ref }}
-          echo '${{ toJSON(github) }}
+      - name: Dump job context
+        run: echo '${{ toJSON(job) }}'
