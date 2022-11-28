@@ -14,4 +14,4 @@ jobs:
       - name: branch
         run: |
           echo ${{ github.head_ref }}
-          echo ${{ github.base_ref }}
+          echo '${{ toJSON(github) }}
